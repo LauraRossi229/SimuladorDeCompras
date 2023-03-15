@@ -20,7 +20,7 @@ do {
      producto = prompt("¿Querés comprar shampoo, acondicionador o crema de peinar?", "Ej: crema de peinar");
      cantidad = parseInt(prompt ("¿Cuántos querés comprar?"));
 
-//     // Validar que cantidad sea un número
+//  asignar precio al producto elegido
 
      switch (producto) {
          case 'shampoo':
@@ -45,7 +45,7 @@ do {
 
 
 
- // Calculo Iva 
+ // Calculo Iva y descuento
 const sumarDosNumeros = (a, b) => a + b
 const restarDosNumeros = (a, b) => a - b
 const calcularIva = precio => precio * 0.21
@@ -132,7 +132,7 @@ function pago (total) {
         alert('El pago se realizará en 1 cuota por un total de $'+ total+ '.')  
     }
 }
-
+// Se valida que solo sean 3, 6 o 12 cuotas
 function validarCuotas (cantidadCuotas) {
     if (cantidadCuotas === 3 || cantidadCuotas === 6 || cantidadCuotas === 12) {
     
